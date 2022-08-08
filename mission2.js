@@ -1,3 +1,5 @@
+
+// Button to bring out form
 function buttonFunction() {
 
     let hiddenDiv = document.querySelector('.hiddenEmailForm');
@@ -8,6 +10,7 @@ function buttonFunction() {
 
 }
 
+// Button to close and cancel form
 function closeDiv() {
     let hiddenDiv = document.querySelector('hiddenEmailForm');
 

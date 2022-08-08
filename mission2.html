@@ -21,18 +21,18 @@
 
 <body>
     <!-- Background image, navBar and content -->
-    <div class="container">
+    <div class="container" id="Home">
         <!-- clip-path bg -->
         <div class="bg">
             <!-- Top navigation bar -->
             <div class="navbar">
                 <ul>
                     <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">PORTFOLIO</a></li>
-                    <li><a href="">SERVICES</a></li>
-                    <li><a href="">TESTIMONIALS</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="#About">ABOUT</a></li>
+                    <li><a href="#Portfolio">PORTFOLIO</a></li>
+                    <li><a href="#Services">SERVICES</a></li>
+                    <li><a href="#Testimonials">TESTIMONIALS</a></li>
+                    <li><a href="#Contact">CONTACT</a></li>
                 </ul>
             </div>
 
@@ -47,15 +47,15 @@
         </div>
         <!-- Form -->
         <div class="hiddenEmailForm" style="display: none;">
-            <form action="">
+            <form action="" method="POST">
                 <label for="firstName">First Name:</label>
-                <input type="text" id="firstName"/>
+                <input type="text" id="firstName" name="first-name"/>
                 <br>
                 <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName"/>
+                <input type="text" id="lastName" name="last-name"/>
                 <br>
                 <label for="email">Email address:</label>
-                <input type="text" id="email"/>
+                <input type="text" id="email" name="email"/>
                 <br>
                 <input type="submit" class="submitButton"/>
                 <br>
@@ -66,7 +66,7 @@
     </div>
 
     <!-- About Me -->
-    <div class="aboutMe-container">
+    <div class="aboutMe-container" id="About">
         <section class="aboutMe">
 
             <!-- Left content -->
@@ -93,7 +93,7 @@
         </svg>
     </div>
     <!-- Portfolio content -->
-    <div class="projects">
+    <div class="projects" id="Portfolio">
         <div class="projectsTextContainer">
             <h2>Projects</h2>
             <p>Highlights of my work</p>
@@ -121,7 +121,7 @@
         </div>
     </div>
     <!-- Cards -->
-    <div class="cardsContainer">
+    <div class="cardsContainer" id="Services">
         <div class="cardsText">
             <h2>Things I'm great at</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -145,7 +145,7 @@
         </div>
     </div>
     <!-- Testimonials -->
-    <div class="testimonialContainer">
+    <div class="testimonialContainer" id="Testimonials">
         <div class="tmText">
             <h2>Client Testimonials</h2>
             <p>Don't take my words for it - here's what my clients say:</p>
@@ -191,26 +191,37 @@
         <!-- Contact information -->
         <section class="contactInfoContainer">
             <div class="geoLocation">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.844016811264!2d174.7634656174438!3d-36.84621159999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47616e229613%3A0x298e1ca7085de6b8!2sMission%20Ready!5e0!3m2!1sen!2snz!4v1653705703060!5m2!1sen!2snz"
-                    style="border:0; width: 100%; height: 100%;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408613.0919297591!2d174.42593449906903!3d-36.85948204413638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47fb5a9ce6fb%3A0x500ef6143a29917!2sAuckland!5e0!3m2!1sen!2snz!4v1659928746762!5m2!1sen!2snz" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="contactInfo">
+            <div class="contactInfo" id="Contact">
                 <ul>
                     <li><b>Address:</b> 
-                        Level 5, 115 Queen Street
-                        Auckland CBD
-                        Auckland, 1010</li>
-                    <li><b>Phone: </b> 0800 005875</li>
-                    <li><b>Email: </b> <a href="mailto: nirmalkumarp@missionreadyhq.com" style="text-decoration: none; color: #D62828;">nirmalkumarp@missionreadyhq.com</a></li>
-                    <li><b>Follow me: </b> </li>
+                        Auckland, New Zealand</li>
+                    <li><b>Email: </b> <a href="mailto: patelnirmal17592@gmail.com" style="text-decoration: none; color: #D62828;">patelnirmal17592@gmail.com</a></li>
+                    <li><b>Follow me: <span>
+                        <a href="https://www.linkedin.com/in/nirmal-patel-08ba20225/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/DeveloperNP"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com/patelnirmal17592"><i class="fa-brands fa-github"></i></a>
+                    </span>
+                    </b> </li>
                 </ul>
             </div>
         </section>
     </div>
     <!-- Footer -->
-    <div></div>
+    <div class="footerContainer">
+
+        <div class="copyRightSection">
+
+            <p>Made with <span style="font-size: 1em; color: #D62828"><i class="fa-solid fa-heart"></i></span> by Nirmal Patel</p>
+            <p>Copyright <i class="fa-solid fa-copyright"></i> 2022 Nirmal Patel. All rights reserved.</p>
+
+        </div>
+
+        <div class="backToTop">
+            <a href="#Home">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </div>
 
     <!-- Link to JS file -->
     <script src="mission2.js"></script>
